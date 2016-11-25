@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Conway's Game of Life</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Conway's Game of Life</h1>
+        <canvas class="gameCanvas" width="800" height="800"></canvas>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+        <input class="form-control widthInput" value="10" />
+      </div>
+      <div class="col-sm-2">
+        <input class="form-control heightInput" value="10" />
+      </div>
+      <div class="col-sm-2">
+        <div class="btn btn-success btn-block startBtn">Start</div>
+      </div>
+      <div class="col-sm-2">
+        <div class="btn btn-warning btn-block stopBtn" disabled="disabled">Stop</div>
+      </div>
+      <div class="col-sm-2">
+        <div class="btn btn-info btn-block stepBtn">Step</div>
+      </div>
+      <div class="col-sm-2">
+        <div class="btn btn-info btn-block randomizeBtn">Randomize</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="./js/gridData.js"></script>
+  <script src="./js/grid.js"></script>
+  <script src="./js/controls.js"></script>
+</body>
+</html>
